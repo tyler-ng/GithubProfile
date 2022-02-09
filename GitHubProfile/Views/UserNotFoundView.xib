@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserNotFoundView" customModule="InterviewAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="784"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Lh-Ln-LjL">
+                    <rect key="frame" x="0.0" y="0.0" width="438" height="784"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Not Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68J-t6-2rf">
+                            <rect key="frame" x="158.5" y="381.5" width="121" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="68J-t6-2rf" firstAttribute="centerX" secondItem="7Lh-Ln-LjL" secondAttribute="centerX" id="Kzo-gD-3be"/>
+                        <constraint firstItem="68J-t6-2rf" firstAttribute="centerY" secondItem="7Lh-Ln-LjL" secondAttribute="centerY" id="eZB-PA-vE5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Lh-Ln-LjL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3cN-KV-qmQ"/>
+                <constraint firstAttribute="bottom" secondItem="7Lh-Ln-LjL" secondAttribute="bottom" id="840-2o-a1z"/>
+                <constraint firstItem="7Lh-Ln-LjL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SPd-ME-vo5"/>
+                <constraint firstAttribute="trailing" secondItem="7Lh-Ln-LjL" secondAttribute="trailing" id="esW-l1-XEL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="7Lh-Ln-LjL" id="RVI-bW-GF4"/>
+                <outlet property="textLabel" destination="68J-t6-2rf" id="xPd-wa-q7E"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="93.080357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
