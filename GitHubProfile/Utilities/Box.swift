@@ -7,7 +7,6 @@
 
 import Foundation
 
-// this class will serve as required in the MVVM architecture
 final class Box<T> {
     typealias Listener = (T) -> Void
     var listener: Listener?
